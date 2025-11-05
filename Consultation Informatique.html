@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Consultation Informatique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            width: 100%;
+            background: #0078ff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005fcc;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Formulaire de Consultation Informatique</h2>
+
+<form action="#" method="post">
+    <label>Nom complet</label>
+    <input type="text" name="nom" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Type de Problème</label>
+    <select name="probleme" required>
+        <option value="">-- Choisir une option --</option>
+        <option>Problème réseau</option>
+        <option>Panne ordinateur</option>
+        <option>Virus / Sécurité</option>
+        <option>Installation de logiciel</option>
+        <option>Site web / Application</option>
+        <option>Autre</option>
+    </select>
+
+    <label>Description du problème</label>
+    <textarea name="description" rows="5" placeholder="Décrivez votre problème..." required></textarea>
+
+    <button type="submit">Envoyer la demande</button>
+</form>
+
+</body>
+</html>
